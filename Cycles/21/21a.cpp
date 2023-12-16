@@ -23,7 +23,8 @@ int main ()
 {
     unsigned n;
     cin >> n;
-    cout << f(n);
+    cout << (f(n) ? "Yes" : "No");
+    return 0;
 
 }
 

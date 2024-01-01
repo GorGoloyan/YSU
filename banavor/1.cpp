@@ -4,11 +4,15 @@ using namespace std;
 
 void f(int arr[], int n)
 {
+    
+        int f = 0, arr1[n];
+        // 3rd amenapocry =>  k < 3
     for (int k = 0; k < 3; k++)
     {
         int t = arr[0];
         int amen = arr[0];
 
+        // gtnenq amenamec elementy
         for (int i = 0; i < n; i++)
         {
             if (arr[i + 1] > t)
@@ -16,7 +20,7 @@ void f(int arr[], int n)
                 amen = arr[i + 1];
             }
         }
-
+        // gtnenq amenapocr elementy
         for (int i = 0; i < n; i++)
         {
             if (arr[i + 1] < t)
@@ -25,6 +29,7 @@ void f(int arr[], int n)
             }
         }
 
+        // gtnenq amenapoqr elementi indexy
         for (int i = 0; i < n; i++)
         {
             if (t == arr[i])
@@ -32,9 +37,16 @@ void f(int arr[], int n)
                 t = i;
             }
         }
-        cout << arr[t] << "  ";
+        // nor zangvacum hertov veragrenq amenapoqr elementnery
+        arr1[f] = arr[t];
+        // amenapoqr elementnerin tanq amenameci arjeqy
         arr[t] = amen;
+        f++;
     }
+
+    cout <<  arr1[f - 1];
+
+    
 }
 
 int main()

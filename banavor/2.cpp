@@ -5,7 +5,7 @@ int f(int arr[], int arrLength, int num)
 {
     if(arr[arrLength-1] == num)
         return arrLength - 1;
-    if (arr[arrLength-1] == 1)
+    if (arrLength-1 == 1)
         return -1;
     return f(arr, arrLength - 1, num);
 }

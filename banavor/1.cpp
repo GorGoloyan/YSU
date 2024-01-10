@@ -26,17 +26,12 @@ void f(int arr[], int n)
             if (arr[i + 1] < t)
             {
                 t = arr[i + 1];
-            }
-        }
-
-        // gtnenq amenapoqr elementi indexy
-        for (int i = 0; i < n; i++)
-        {
-            if (t == arr[i])
-            {
+                // gtnenq amenapoqr elementi indexy
                 t = i;
             }
         }
+
+        
         // nor zangvacum hertov veragrenq amenapoqr elementnery
         arr1[f] = arr[t];
         // amenapoqr elementnerin tanq amenameci arjeqy

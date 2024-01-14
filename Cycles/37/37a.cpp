@@ -1,18 +1,16 @@
 #include <iostream>
 using namespace std;
 
-int f(int n)
-{
-
-}
-
-
 int main()
 {
-    int n;
-    for(int i = 0; i < 5; i++)
+    const int size = 100;
+    int arr[size];
+    for (int i = 0; i < size; i++)
     {
-        cin >> n;
-        
+        int tmp;
+        cin >> tmp;
+        if (tmp == 0)
+            break;
+        arr[i] = tmp;
     }
 }

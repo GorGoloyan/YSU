@@ -3,10 +3,7 @@ using namespace std;
 
 void igid(int arr[], int count)
 {
-   int arr1[count];
    int counter = 0;
-
-
    for (int i = 0; i < count - 1; i++)
    {
       int minIndex = i;

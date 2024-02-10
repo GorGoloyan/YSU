@@ -16,6 +16,7 @@ int fib(int n)
 int main()
 {
     int n;
+    cout << "nermuceq index" << endl;
     cin >> n;
     cout << fib(n);
 }

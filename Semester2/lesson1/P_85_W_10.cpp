@@ -11,18 +11,16 @@ bool isParz(int a)
     if (a % 2 == 0)
         return 0;
     for (int i = 3; i * i <= a; i += 2)
-    {
         if (a % i == 0)
             return 0;
-    }
     return 1;
 }
 
 int main()
 {
     const int size = 10;
-    int count = 0, i;
-    int arr[size]{2, 5, 7, 8, -1, 6, 7, 10};
+    int count = 0;
+    int arr[size]{2, 5, 7, 8, 1, 6, 7, -10};
 
     bool t = 0;
     for (int i = 0; i < size; i++)
@@ -33,7 +31,6 @@ int main()
             t = 1;
             break;
         }
-
         else if (isParz(arr[i]))
             count++;
     }

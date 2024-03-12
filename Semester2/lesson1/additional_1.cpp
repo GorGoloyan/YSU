@@ -21,12 +21,18 @@ void is2sq(int count, int arr[])
         }
     }
 
-    for (int i = 0; i < count; i++)
+    for (int i = 0, k = 0; i < count; i++)
     {
-        if (i == indexOf2[0])
+        if (i == indexOf2[k])
+        {
+            k++;
             continue;
+        }
+
         else
+        {
             cout << arr[i] << "\t";
+        }
     }
 }
 

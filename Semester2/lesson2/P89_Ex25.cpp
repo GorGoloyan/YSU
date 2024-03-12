@@ -5,16 +5,16 @@ double f(int x, int y)
     return (x + y) / 2.0;
 }
 
-double f1(int arr[], int n, double (*)(int x, int y))
+double f1(int arr[], int n, double (*)(int x, int y), double (*)(int x, int y))
 {
     double M = 0;
     for (int i = 0; i < n; ++i)
     {
         for (int j = i + 1; j < n; ++j)
         {
-            if (M < f(arr[i], arr[j]))
+            if (M < k(arr[i], arr[j]))
             {
-                M = f(arr[i], arr[j]);
+                M = k(arr[i], arr[j]);
             }
         }
     }

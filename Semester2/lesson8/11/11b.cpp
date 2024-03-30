@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     char tox[150]; // zaanhgd - zanhgd
-    cin.getline(tox, 150, '\n');
+    cin.getline(tox, 150);
 
 
     for (int i = 0; i < strlen(tox);)
